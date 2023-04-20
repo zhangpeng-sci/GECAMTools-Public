@@ -55,7 +55,12 @@
 
 ---
 ## 历史版本
-### v20230420 [源码和使用手册](file/source_code/v20230420/)  
+### v20230420 
+#### 源码和使用手册
+[下载方式-github](file/source_code/v20230420/)  
+[下载方式-IHEPBox](https://ihepbox.ihep.ac.cn/ihepbox/index.php/s/vSA1yPTQBSUF2Pt)  
+
+#### 更新说明
 <font color="#ff8a14">修复问题：</font><br>
 1. 修复evt中生成多探头光变的误差计算错误<br>
 2. 修正并道数据设置channel bin失效的问题<br>
