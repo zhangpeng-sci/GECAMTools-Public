@@ -55,6 +55,28 @@
 
 ---
 ## 历史版本
+### v20230611  
+#### 源码和使用手册
+[下载方式-github](file/source_code/v20230611/)  
+[下载方式-IHEPBox](https://ihepbox.ihep.ac.cn/ihepbox/index.php/s/Tqeabem1uhsOrax)  
+
+#### 更新说明
+新增：<br>
+1. 增加gecam的事例数据根据时间段截取保存的功能(evt.crop)，见2.1.2节。 
+
+修复问题：<br>
+1. 修正计算T90时，净光变误差计算错误。
+2. 修正多探头叠加的光变只能单独修正死时间：  
+    evt.plot_light_curve_with_detectors和evt.plot_spectrum_with_detectors将不再返回叠加后的光变和能谱对象（total_lc_obj和total_spec_obj）。
+3. 修正能谱错误（计数为整数）。
+4. 总光变自动修正死时间（此调整不影响能谱）。  
+events.to_light_curve和lc_kwargs_dic中的参数correct_by_dead_time无效，都会修正死时间，只是总光变在取出数据（get_data, get_plot_data）时增加correct_by_dead_time来提取是否修正死时间的光变数据。
+5. 修正画图错误。 
+6. 细节问题修复
+
+
+
+
 ### v20230420 
 #### 源码和使用手册
 [下载方式-github](file/source_code/v20230420/)  
