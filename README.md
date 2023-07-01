@@ -58,6 +58,26 @@
         CALDB.pth中内容为CALDB中software文件夹路径：E:\gecam\CALDB\software
     (3) 完成之后，可进入 python，通过 `import RSP_generator` 来检验标定库是否安装成功
 
+2.2.2 下载安装HXMT的标定库CALDB(如需分析HXMT的GRB数据)  
+(1) 下载HXMT-CALDB, 参考已公布的链接: [HXMT-CALDB](https://ihepbox.ihep.ac.cn/ihepbox/index.php/s/A99tEknkuCbdpsP)   
+(2) python环境需额外安装numba库： pip install numba  
+
+    HXMT-CALDB 安装：Linux或Mac     
+    (1) 标定库HXMT-CALDB下载之后, 将source HXMT_CALDB path/HXMT_RSP_Generator/tools/hxmt_rsp_generator_init.sh 
+    这句话放环境文件里,或直接source  
+    (2) source 环境文件，可进入 python，并通过 `from HXMT_RSP_Generator import HXMTrspg_v1` 来检验标定库是否安装成功
+
+    HXMT-CALDB 安装: Windows (测试于win10):   
+    (1) 添加系统变量： 变量名为：HXMT_CALDB， 地址为CALDB对应的根目录，例：E:\gecam\HXMT_CALDB  
+    (2) 在python环境的site-packages中新建一个HXMT_CALDB.pth文件
+        可通过以下方法找到python或者conda对应的目录：
+        >>> import os
+        >>> os.path.dirname(os.__file__)
+        >>> 'C:\\Users\\用户名\\.conda\\envs\\gecamTools\\lib'
+        因此新建文件：C:\Users\用户名\\.conda\envs\gecamTools\Lib\site-packages\HXMT_CALDB.pth
+        HXMT_CALDB.pth中内容为CALDB的根目录，例：E:\HXMT\HXMT_CALDB
+    (3) 完成之后，可进入 python，通过 `from HXMT_RSP_Generator import HXMTrspg_v1` 来检验标定库是否安装成功
+
 2.3 测试  
 `import gecam`
 
@@ -66,9 +86,20 @@
 
 ---
 ## 历史版本
+### v20230701  
+#### 源码和使用手册
+[下载方式-IHEPBox](https://ihepbox.ihep.ac.cn/ihepbox/index.php/s/qBd3Djte6MBDYcT)  
+
+#### 更新说明
+新增：<br>
+1. 新增对于HXMT的GRB数据的分析。 
+
+修复问题：<br>
+1. 细节问题修复
+
+
 ### v20230611  
 #### 源码和使用手册
-[下载方式-github](file/source_code/v20230611/)  
 [下载方式-IHEPBox](https://ihepbox.ihep.ac.cn/ihepbox/index.php/s/Tqeabem1uhsOrax)  
 
 #### 更新说明
