@@ -86,6 +86,17 @@
 
 ---
 ## 历史版本
+### v20240514  
+#### 源码和使用手册
+[下载方式-IHEPBox](https://ihepbox.ihep.ac.cn/ihepbox/index.php/s/x6HkDidQ8eCvrrG)  
+
+#### 更新说明
+<font color="#ff8a14">修复问题：</font><br>
+1. 修正时间bin和能谱的源区间浮点数精度导致的时间分解谱时间重叠问题
+2. 提升T90计算的稳健性
+3. 去除高版本依赖库的限制
+
+
 ### v20230701  
 #### 源码和使用手册
 [下载方式-IHEPBox](https://ihepbox.ihep.ac.cn/ihepbox/index.php/s/qBd3Djte6MBDYcT)  
