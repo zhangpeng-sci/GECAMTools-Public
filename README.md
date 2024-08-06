@@ -1,3 +1,9 @@
+[English](README_en.md)
+|
+[中文](README.md)
+|
+[![Python](https://img.shields.io/badge/Python-3.6+-blue.svg)](https://www.python.org/)
+
 <img src="file/img/logo.jpg" width = "315" height = "265" alt="" align="center" />  
 
 # GECAM数据分析工具（GECAMTools）
@@ -24,7 +30,7 @@
 
 ### 所需环境  
     1 系统环境：windows、linux、mac  
-    2 python环境：python版本>=3.6 (不建议安装python 3.9及以上版本)
+    2 python环境：python版本>=3.6
 
 ### 安装流程  
 1 下载源程序  
