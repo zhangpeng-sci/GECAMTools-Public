@@ -1,3 +1,10 @@
+[English](README_en.md)
+|
+[中文](README.md)
+|
+[![Python](https://img.shields.io/badge/Python-3.6+-blue.svg)](https://www.python.org/)
+
+
 <img src="file/img/logo.jpg" width = "315" height = "265" alt="" align="center" />  
 
 # GECAM Data Analysis Tool (GECAMTools)
